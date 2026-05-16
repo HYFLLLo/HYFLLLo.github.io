@@ -1612,3 +1612,213 @@ body {
 .contact-form__send:hover {
   transform: scale(1.08);
 }
+
+.contact-form__send {
+  text-decoration: none;
+}
+
+.contact-node__value {
+  font-size: 11px;
+  text-transform: none;
+  letter-spacing: 0.04em;
+  color: var(--on-surface-variant);
+}
+
+/* --- About: capability list & timeline points --- */
+.about-capabilities {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-capabilities li {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+  align-items: baseline;
+  padding: 10px 12px;
+  border: 1px solid color-mix(in srgb, var(--primary-neon) 12%, transparent);
+  background: color-mix(in srgb, var(--surface-lowest) 35%, transparent);
+}
+
+.about-capabilities__index {
+  color: var(--primary-neon);
+}
+
+.log-card__points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.log-card__points li {
+  display: grid;
+  grid-template-columns: 8px 1fr;
+  gap: 10px;
+  align-items: baseline;
+  font-size: 13px;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--on-surface) 88%, transparent);
+}
+
+.log-card__bullet {
+  width: 4px;
+  height: 4px;
+  margin-top: 6px;
+  background: var(--primary-neon);
+  display: block;
+}
+
+.log-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+/* --- Work: section heads, project card extras --- */
+.work-section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin: 0 0 24px;
+}
+
+.work-section-head--mt {
+  margin-top: 64px;
+}
+
+.work-section-head__tag {
+  color: var(--secondary);
+  letter-spacing: 0.18em;
+}
+
+.work-project-grid--two {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .work-project-grid--two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.work-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.work-card--featured {
+  border-color: color-mix(in srgb, var(--primary-neon) 55%, transparent);
+  box-shadow: 0 0 24px rgba(0, 243, 255, 0.18);
+}
+
+.work-card__featured {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 10px;
+  color: #ffd84a;
+  letter-spacing: 0.18em;
+}
+
+.work-card__subtitle {
+  margin: -6px 0 0;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  font-size: 11px;
+}
+
+.work-card__highlights {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.work-card__highlights li {
+  display: grid;
+  grid-template-columns: 8px 1fr;
+  gap: 10px;
+  align-items: baseline;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--on-surface) 90%, transparent);
+}
+
+.work-card__hl-bullet {
+  width: 4px;
+  height: 4px;
+  margin-top: 6px;
+  background: var(--primary-neon);
+  display: block;
+}
+
+.work-card__bottom {
+  margin-top: auto;
+  padding-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid color-mix(in srgb, var(--primary-neon) 12%, transparent);
+}
+
+.work-card__metric {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.work-card__metric-value {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.work-card__metric-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.work-card__links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.work-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border: 1px solid var(--cyan-border);
+  color: var(--primary-neon);
+  text-decoration: none;
+  font-size: 10px;
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.work-card__link:hover {
+  border-color: var(--primary-neon);
+  background: color-mix(in srgb, var(--primary-neon) 10%, transparent);
+}
+
+.work-card__link-icon {
+  font-size: 14px !important;
+}

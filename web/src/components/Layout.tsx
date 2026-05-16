@@ -75,18 +75,24 @@ function SiteFooter() {
     <footer className="site-footer">
       <div className="site-footer__inner">
         <div className="site-footer__brand">
-          <span className="label-glitch site-footer__status">STATUS: ONLINE // 2026 NEURAL_ARCHIVE</span>
+          <span className="label-glitch site-footer__status">
+            胡雨丰 · YuFeng.Hu // © {new Date().getFullYear()} NEURAL_ARCHIVE
+          </span>
         </div>
         <div className="site-footer__links">
-          <a href="#security">Security</a>
-          <a href="#logs">Logs</a>
-          <a href="#mainframe">Mainframe</a>
+          <a href="https://github.com/HYFLLLo" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a href="mailto:huyufeng227@163.com">Email</a>
+          <a href="#" onClick={(e) => e.preventDefault()}>
+            WeChat: HYF0227uio
+          </a>
         </div>
         <div className="site-footer__node label-mono">
           <span className="material-symbols-outlined site-footer__node-icon" aria-hidden>
             terminal
           </span>
-          NODE_0041 // SYNC_SUCCESS
+          NODE_HYF // SYNC_SUCCESS
         </div>
       </div>
     </footer>
